@@ -1,0 +1,6 @@
+.content_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: hsl(180, 52%, 96%);
+}

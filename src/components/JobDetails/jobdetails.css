@@ -1,0 +1,34 @@
+.jobdetails_container {
+    max-width: 80%;
+    text-align: left;
+    margin: 20px;
+}
+
+.jobdetails_maindetails {
+    margin: 10px; 
+    padding: 5px;
+}
+
+.company {
+    color: hsl(180, 29%, 50%);
+}
+
+.new {
+    background-color: hsl(180, 29%, 50%);
+    color: #fff;
+}
+
+.featured {
+    background-color: hsl(180, 14%, 20%);
+    color: #fff;
+}
+
+.jobdetails_position {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.jobdetails_details {
+    margin: 10px;
+    font-weight: lighter;
+}

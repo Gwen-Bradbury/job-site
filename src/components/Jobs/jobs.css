@@ -1,0 +1,10 @@
+.job_container {
+    display: flex;
+    width: 80%;
+    margin: 30px;
+    background-color: #fff;
+}
+
+.jobdetails_img {
+    margin: 20px;
+}

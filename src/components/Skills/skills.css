@@ -1,0 +1,11 @@
+.skills_container {
+    max-width: 80%;
+    margin-top: 50px;
+}
+
+.skills_skill {
+    margin: 10px;
+    padding: 5px;
+    background-color: hsl(180, 52%, 96%);
+    cursor: pointer;
+}
