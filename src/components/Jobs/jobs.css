@@ -3,6 +3,7 @@
     width: 80%;
     margin: 30px;
     background-color: #fff;
+    justify-content: space-between;
 }
 
 .jobdetails_img {
