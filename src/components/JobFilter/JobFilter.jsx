@@ -27,9 +27,9 @@ const JobFilter = (props) => {
     useEffect(() => {
         const languagesAndToolsArray = Object.entries(checked)
             .filter((it) => it[1]).map((it) => it[0]);
-        const filteredJobs = props.initialJobs.filter(Job => Job.languages.some(item => languagesAndToolsArray.includes(item)))
-        const otherFilteredJobs = props.initialJobs.filter(Job => Job.tools.some(item => languagesAndToolsArray.includes(item)))
-        const allFilteredJobs = [...filteredJobs, ...otherFilteredJobs]
+        const filteredJobsLanguages = props.initialJobs.filter(Job => Job.languages.some(item => languagesAndToolsArray.includes(item)))
+        const filteredJobsTools = props.initialJobs.filter(Job => Job.tools.some(item => languagesAndToolsArray.includes(item)))
+        const allFilteredJobs = [...filteredJobsLanguages, ...filteredJobsTools]
         const dedupedFilteredJobs = [...new Set(allFilteredJobs)]
 
         props.setJobs(dedupedFilteredJobs)
