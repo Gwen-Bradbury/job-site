@@ -10,7 +10,7 @@ const Skills = (props) => {
     return (
         <div className="skills_container">
             {combinedSkills.map((skill, i)=>(
-                <span className="skills_skill" key={i}>{skill}</span>
+                <span className="skills_skill" key={i*10}>{skill}</span>
             ))}
         </div>
     )
