@@ -37,7 +37,7 @@ const JobFilter = (props) => {
     return (
         <div className="job_filter">
             {potentialJobs.map(Job => (
-                <FilterCheckbox key={uuid()} value={Job} handleCheckboxClick = {handleCheckboxClick} />
+                <FilterCheckbox key={uuid()} value={Job} isChecked={checked[Job]} handleCheckboxClick = {handleCheckboxClick} />
             ))}
         </div>
     )

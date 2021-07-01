@@ -257,7 +257,7 @@ const hex = [
     'fe',
     'ff',
   ];
-  const uuid = (): string => {
+  const uuid = () => {
     const r = crypto.getRandomValues(new Uint8Array(16));
     r[6] = (r[6] & 0x0f) | 0x40;
     r[8] = (r[8] & 0x3f) | 0x80;
