@@ -1,4 +1,4 @@
-This is a project that I made to explore react. The focus was functionality rather than the sexy look.
+This is a project made purely to explore React. The focus was functionality, rather than UX/UI design.
 
 ## Available Scripts
 
