@@ -1,11 +1,15 @@
 .job_container {
     display: flex;
     width: 80%;
-    margin: 30px;
+    margin: 0 auto;
     background-color: #fff;
     justify-content: space-between;
 }
 
 .jobdetails_img {
     margin: 20px;
+}
+
+.flex {
+    display: flex;
 }

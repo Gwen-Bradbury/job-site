@@ -25,10 +25,10 @@ const JobFilter = (props) => {
         setChecked(draft)
     }
     useEffect(() => {
-        const languagesArray = Object.entries(checked)
+        const languagesAndToolsArray = Object.entries(checked)
             .filter((it) => it[1]).map((it) => it[0]);
-        const filteredJobs = props.initialJobs.filter(Job => Job.languages.some(item => languagesArray.includes(item)))
-        const otherFilteredJobs = props.initialJobs.filter(Job => Job.tools.some(item => languagesArray.includes(item)))
+        const filteredJobs = props.initialJobs.filter(Job => Job.languages.some(item => languagesAndToolsArray.includes(item)))
+        const otherFilteredJobs = props.initialJobs.filter(Job => Job.tools.some(item => languagesAndToolsArray.includes(item)))
         const allFilteredJobs = [...filteredJobs, ...otherFilteredJobs]
         const dedupedFilteredJobs = [...new Set(allFilteredJobs)]
 
